@@ -1,8 +1,14 @@
-# KoinX Tax Loss Harvesting
+# KoinX Tax Harvesting API
 
-## Description
-API to calculate crypto tax based on trades using Indian tax rules.
+## Live API
+https://koinx-tax-api.onrender.com
 
-## Run
-npm install
-node app.js
+## Endpoint
+POST /api/calculate-tax
+
+## Example Request
+{
+  "trades": [
+    { "buyPrice": 100, "sellPrice": 150, "quantity": 2 }
+  ]
+}
